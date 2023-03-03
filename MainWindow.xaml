@@ -1,0 +1,25 @@
+﻿<Window x:Class="GeneratorPESELWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeneratorPESELWPF"
+        mc:Ignorable="d"
+        Title="Generator PESEL" Height="450" Width="800"
+        Background="LightBlue">
+    <Grid>
+        
+        <DatePicker x:Name="WybranaData" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Center" />
+        <RadioButton x:Name="MezczyznaPrzycisk" Content="Mezczyzna" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Center"/>
+        <RadioButton x:Name="KobietaPrzycisk" Content="Kobieta" HorizontalAlignment="Left" Margin="400,30,0,0" VerticalAlignment="Center"/>
+        <Button Content="Generuj numer PESEL" HorizontalAlignment="Left" Margin="600,0,0,0" VerticalAlignment="Center" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="150,-100,0,0" TextWrapping="Wrap" Text="1. Wybierz date urodzenia" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="400,-100,0,0" TextWrapping="Wrap" Text="2. Wybierz plec" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="600,-100,0,0" TextWrapping="Wrap" Text="3. Wcisnij przycisk" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,-200,0,0" TextWrapping="Wrap" Text="Instrukcja" VerticalAlignment="Center"/>
+        <TextBlock x:Name="PESEL" HorizontalAlignment="Center" Margin="0,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+
+
+    </Grid>
+</Window>
